@@ -9,7 +9,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);;
+
     }
 
     private long lastTime;
@@ -19,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
         if(ct-lastTime>2000){
             Toast.makeText(this,"再按返回键退出",Toast.LENGTH_LONG).show();
             lastTime=ct;
+        }else {
+            super.onBackPressed();
         }
-        super.onBackPressed();
     }
 }
