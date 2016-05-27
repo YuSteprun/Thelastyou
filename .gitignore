@@ -1,0 +1,30 @@
+
+#忽略配置文件
+#IntelliJ IDEA
+
+.idea/
+*.iml
+
+
+#Eclipse project
+
+.project
+.classpath
+.settings/
+
+#Gradle project
+.gradle/
+build/
+
+#Android files
+bin/
+gen/
+out/
+local.properties
+
+#Temp files
+*.bak
+*.tmp
+*.remp
+Thumbs.db
+.DS_Store
